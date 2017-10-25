@@ -1,0 +1,579 @@
+
+
+
+
+/*banner  */
+
+.banner-layout1 {
+    margin: 25px 0 35px 0;
+}
+
+.bannerNull {
+    height: 100px;
+}
+
+.banner-layout {
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.carousel {
+    position: relative;
+    width: 1000px;
+    height: 245px;
+    overflow: hidden;
+}
+
+.carousel .img-ct{
+    position: absolute;
+    overflow: hidden;
+    width: 10000px;
+}
+
+.carousel .img-ct li{
+    float: left;
+}
+
+.carousel .img-ct li img {
+    width: 1000px;
+    height: 245px;
+}
+
+.carousel .dots {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+}
+
+.carousel .dots li {
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 99;
+}
+
+.carousel .dots li.hover {
+    background-color: #fff;
+}
+
+.carousel .btn {
+    display: flex;
+}
+
+.carousel .btn .arrow {
+    position: absolute;
+    top: 50%;
+    margin-top: -30px;
+    display: block;
+    width: 40px;
+    height: 60px;
+    background: #333;
+    line-height: 60px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: #eee;
+    opacity: 0.8;
+    z-index: 1;
+}
+
+.carousel .btn .up {
+    left: 0;
+    border-radius: 0 4px 4px 0;
+}
+
+.carousel .btn .down {
+    right: 0;
+    border-radius: 4px 0 0 4px;
+}
+
+.carousel .btn a.arrow:hover {
+    opacity: 1;
+}
+
+/*内容部分头部广告 advertise  */
+
+.advertise {
+    margin-top: 5px;
+    background-color: #dbc7ba;
+}
+
+.advertise .advertise-layout {
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.advertise .advertise-layout li {
+    margin: 30px 0;
+    padding-left: 5px;
+    padding-top: 5px;
+    background: #fff;
+}
+
+.advertise .advertise-layout li:nth-child(3) {
+    padding-right: 5px;
+}
+
+.advertise .advertise-layout img:hover {
+    opacity: 0.7;
+}
+
+
+
+/*advertise-word 广告词  */
+.advertise-word {
+    margin-top: 40px;
+}
+
+.advertise-word .advertise-layout {
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.advertise-word .advertise-layout li {
+    width: 50%;
+}
+
+.advertise-word .advertise-layout  h3 {
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 16px;
+    color: #666; 
+}
+
+.advertise-word .advertise-layout p {
+    font-size: 12px;
+    text-align: center;
+    color: #666;
+    line-height: 3em;
+    border-right: 1px solid #666;
+}
+
+.advertise-word .advertise-layout p .discolor {
+    color: #c5856b;
+    font-weight: bold;
+}
+
+
+.advertise-word .advertise-layout li:nth-child(2) p {
+    border-right: none;
+}
+
+.advertise-word .advertise-layout a {
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    color: #666;
+}
+
+.advertise-word .advertise-layout a span::before{
+    display: inline-block;
+    content: '';
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    background: url(../images/coin_left.png) no-repeat;
+    background-size: 30px;
+    vertical-align: middle;
+}
+
+.advertise-word .advertise-layout a:hover {
+    color: #e0bba9;
+}
+
+
+
+
+
+/* 实体店位置 shop address */
+
+.shop-address {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.shop-address-top{
+    position: relative;
+    height: 5px;
+    margin-top: 100px;
+    background-color: #f7f1f5;
+    border-top: 10px solid #333; 
+    border-bottom: 50px solid #dbc8ba; 
+    box-sizing: content-box;
+}
+
+.shop-address-top img {
+    position: absolute;
+    top: -50px;
+    left: -50px;
+}
+
+.shop-address-container {
+    margin-top: 20px;
+    border: 3px solid #dbc8ba;
+    padding: 36px;
+}
+
+.shop-address-container-text .erea {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+
+.shop-address-container-text .slide-line {
+    position: relative;
+    margin: 20px 0;
+    border-top: 2px solid #ccc;
+}
+
+.shop-address-container-text .slide-line img {
+    position: absolute;
+    top: -8px;
+    left: 75px;
+}
+
+.shop-address-container-text .erea p {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 48px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+.shop-address-container-text .erea li {
+    cursor: pointer;
+}
+
+.shop-address-container-text .erea p a{
+    display: inline-block;
+    margin-right: 70px;
+}
+
+.shop-address-container-text .erea li.hover {
+    color: #e0bba9;
+}
+
+.shop-address-container-text .erea li.hover p {
+    display: block;
+}
+
+.erea li p a:hover {
+    color: #e0bba9;
+}
+
+.shop-address-container-img {
+    margin-top: 60px;
+    padding: 10px;
+    background-color: #e9e9e9;
+    text-align: center;
+    line-height: 0px;
+}
+
+
+
+
+/*content 内容 */
+
+.layout {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.container-title {
+    position: relative;
+    padding: 50px;
+    margin-top: 100px;
+    background: #d9b39b;
+}
+
+.container-title img {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    margin-left: -87px;
+}
+
+.container-more {
+    position: relative;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.container-more a {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 24px;
+    display: block;
+    background-color: #eee;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.container-more a:hover {
+    color: #d9b39b;
+}
+
+.container-img1 {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-img1 .ri{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.container-img2 {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-img2 .ri{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.container-img1 img:hover,
+.container-img2 img:hover {
+    opacity: 0.6;
+}
+
+.container-img1 div a,
+.container-img2 div a {
+    display: block;
+    box-shadow: 0 4px 5px 0 rgba(0,0,0,0.15), 0 5px 20px 0 rgba(0,0,0,0.08);
+}
+
+/*结婚照 wedding-photo  */
+
+.wedding-photo {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.wedding-photo li:hover  {
+    opacity: 0.6;
+}
+
+.btns {
+    margin-top: 10px;
+    text-align: right;
+}
+
+.btns a {
+    padding: 2px 10px;
+    background-color: #eee;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.btns a:hover {
+    color: #d9b39b;
+}
+
+
+/*右侧边栏  */
+.floor {
+    /*display: none;  */
+    position: fixed;
+    bottom: 0;
+    right: 30px;
+    padding-bottom: 10px;
+    background-color: #dbc7ba;
+    width: 50px;
+    text-align: center;
+    z-index: 99;
+}
+
+.floor #top {
+    position: relative;
+    top: -30px;
+    left: -5px;
+    width: 60px;
+    padding-bottom: 24px;
+    font-size: 12px;
+    color: #fff; 
+    background-color: #d9b39b;
+}
+
+.floor .size {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.floor .size div {
+    position: absolute;
+    top: 0;
+    right: 50px;
+    width: 0;
+    height: 40px;
+    line-height: 40px;
+    background-color: #fff;
+    color: #333;
+    display: none;
+}
+
+
+/*右侧导航栏背景图  */
+.floor div.car{
+	position: relative;
+	background: url(../images/icon_servie.png) 8px -28px;
+}
+.floor div.card{
+	background: url(../images/icon_servie.png) 10px -70px;
+}
+.floor div.mysave{
+    position: relative;
+	background: url(../images/icon_servie.png) 10px -114px;
+}
+.floor div.save{
+	background: url(../images/icon_servie.png) 10px -154px;
+}
+.floor div.mob{
+	background: url(../images/icon_servie.png) 10px -195px;
+}
+.floor div.share{
+	background: url(../images/icon_servie.png) 8px 40px;
+}
+.floor div.back_top{
+	height: 50px;
+	background: url(../images/totop.jpg) 0px -50px;
+}
+
+ .floor div.car:hover {
+	position: relative;
+    background: url(../images/icon_servie.png) 40px -28px;
+    background-color: #fff;
+}
+.floor div.card:hover {
+    background: url(../images/icon_servie.png) 40px -70px;
+    background-color: #fff;
+}
+.floor div.mysave:hover {
+    position: relative;
+    background: url(../images/icon_servie.png) 40px -114px;
+    background-color: #fff;
+}
+.floor div.save:hover {
+    background: url(../images/icon_servie.png) 40px -154px;
+    background-color: #fff;
+}
+.floor div.mob:hover {
+    background: url(../images/icon_servie.png) 40px -195px;
+    background-color: #fff;
+}
+.floor div.share:hover {
+    background: url(../images/icon_servie.png) 40px 40px;
+    background-color: #fff;
+}
+.floor div.back_top:hover {
+	height: 50px;
+    background: url(../images/totop.jpg) -50px -50px;
+    background-color: #fff;
+} 
+
+/*右侧导航栏小气泡显示数量 */
+.floor div.mysave i,.floor div.car i {
+    /*display: none;  */
+    position: absolute;
+    right: 5px;
+    top: 0;
+    width: 15px;
+    height: 15px;
+    line-height: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px 10px 10px 0;
+    color: #fff;
+    font-size: 12px;
+    background-color: #d9b39b;
+    text-align: center;
+    font-style: normal;
+}
+
+.cbox {
+    display: none;
+}
+
+/* 有侧边栏收藏样式 */
+.floor .cbox {
+    position: absolute;
+    top: 0px;
+    right: 50px;
+    width: 200px;
+    height: 550px;
+    background: #fff;
+    border: 1px solid #ddd;
+    z-index: -1;
+}
+
+.floor .collection-li {
+    display: flex;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+} 
+
+.floor .collection-li .cbox-img {
+    margin: 0 10px;
+}
+
+.floor .cbox .cbox-img img {
+    width: 50px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+}
+
+.floor .collection-li .cbox-text{
+    text-align: left;
+}
+
+.floor .collection-li .cbox-text p:nth-child(1){
+    position: relative;
+}
+
+
+.floor .collection-li .cbox-text span {
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    text-align: center;
+    line-height: 18px;
+    width: 20px;
+    height: 20px;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.floor .collection-li .cbox-text span:hover {
+    background: #999;
+    color: #fff;
+    border: none;
+}
+
+
+
+/* 有侧边栏收藏样式 */

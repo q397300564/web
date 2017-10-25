@@ -1,0 +1,153 @@
+
+#registered {
+    position: absolute;
+    top: 40px;
+    right: 170px;
+    width: 300px;
+    text-align: center;
+    border-radius: 3px;
+    box-shadow: 0 4px 5px 0 rgba(0,0,0,.2), 0 5px 20px rgba(0,0,0,.18); 
+    background-color: #fff;
+    overflow: hidden;
+    z-index: 1;
+}
+
+#registered .tab-reg {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#registered .tab-reg li {
+    min-width: 50%;
+    padding: 16px 0;
+    text-align: center;
+    cursor: pointer;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #ddd;
+}
+
+#registered .tab-reg .phone-reg.hover {
+    background-color: #fff;
+    border-right: 1px solid #ddd;
+    border-bottom: none;
+}
+
+#registered .tab-reg .email-reg.hover {
+    background-color: #fff;
+    border-left: 1px solid #ddd;
+    border-bottom: none;
+}
+
+#registered .info {
+    display: none;
+    margin-top: 5px;
+    padding: 5px 0 5px 28px;
+    border: 1px solid red;
+    text-align: left;
+    font-size: 12px;
+    color: #333;
+    background: #fff2f2 url(../images/ico-error.png) no-repeat 6px center;
+}
+
+/*手机注册  */
+
+.phone-reg-content {
+    display: none;
+    padding: 0 28px;
+}
+
+#registered .phone-reg-content.hover {
+    display: block;
+}
+
+#registered-form .user {
+    margin: 10px 0;
+    padding-left: 28px;
+    background: url(../images/ico-uinput.png) no-repeat 8px 11px;
+}
+
+#registered-form .pwd {
+    margin: 10px 0;
+    padding-left: 28px;
+    background: url(../images/ico-uinput.png) no-repeat 8px -25px;
+}
+
+#registered .v-v-c,
+#registered .p-v-c {
+    display: flex;
+    justify-content: space-between;
+}
+
+#voice-verification-code,
+#phone-verification-code {
+    width: 130px;
+    padding-left: 28px;
+    margin: 10px 12px 10px 0;
+    background: url(../images/ico-uinput.png) no-repeat 6px -96px;
+}
+
+#voice-verification-code+span,
+#getCheckNum_phone {
+    margin: 10px 0;
+    font-size: 12px;
+    color: #333;
+    background: #f5f5f5;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#voice-verification-code+span:hover {
+    opacity: 1;
+    color: #cc8d70;
+}
+
+#registered-form .terms-ct {
+    display: flex;
+    font-size: 12px;
+}
+
+#registered-form .terms-ct>label a{
+    color: #cc8d70;
+}
+
+#registered-form .terms-ct>label a:hover {
+    text-decoration: underline;
+}
+
+#registered-form #terms {
+    position: relative;
+    top: 3px;
+    left: 0;
+    margin-right: 3px;
+}
+
+#registered .btns a{
+    margin-top: 10px;
+}
+
+#registered .other_login {
+    display: block;
+    margin: 5px 0;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+#registered .other_login:hover {
+    text-decoration: underline;
+}
+
+
+/*手机注册  */
+
+/*邮箱注册  */
+.email-reg-content {
+    display: none;
+    padding: 0 28px;
+}
+
+#registered .email-reg-content.hover {
+    display: block;
+}
+
+/*邮箱注册  */

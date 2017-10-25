@@ -1,0 +1,747 @@
+#main {
+    padding: 30px 0;
+    background-color: #fef3f1;
+}
+
+.layout {
+    width: 1000px;
+    margin: 0 auto;
+}
+/*主体　第一部分 */
+
+    /*主体　上 title */
+.main-top {
+    padding-top: 10px;
+    background: #fff;
+}
+
+.main-top>p {
+    margin-left: 20px;
+    font-size: 12px;
+    color: #666;
+}
+
+    /*主体　上 title */
+
+    /*主体　产品 图*/
+
+.main-top .product {
+    display: flex;
+    justify-content: center;
+    padding: 30px 20px;
+}
+
+.main-top .product>li{
+    width: 50%;
+}
+
+.main-top .product-img .product-img-ct {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+
+.main-top .product-img .img-side-list li{
+    position: relative;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.main-top .product-img .img-side-list li>.hover {
+    display: block;
+}
+
+.main-top .product-img .img-side-list .hover {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 2px solid #feabab;
+}
+
+.main-top .product-img .img-side-list .hover>span{
+    position: relative;
+    left: 52px;
+    top: 25px;
+    display: block;
+    width: 0;
+    height: 0;
+    border: 5px solid rgba(0, 0, 0, 0);
+    border-left: 5px solid #feabab;
+}
+
+.main-top .product-img .img-side-list img{
+    width: 55px;
+}
+
+.main-top .product-img .img-content {
+    position: relative;
+    margin-left: 8px;
+}
+
+.main-top .product-img .img-content li{
+    display: none;
+}
+
+.main-top .product-img .img-content li.hover {
+    display: block;
+}
+
+.main-top .product-img .img-content img {
+    width: 350px;
+}
+
+.main-top .product-img .product-img-ct .clickNext {
+    display: block;
+    width: 20px;
+    height: 40px;
+    border: 1px solid #eee;
+    border-radius: 5px 0 0 5px;
+    background: url(../images/next.png) no-repeat 4px 10px;
+    background-size: 10px;
+    cursor: pointer;
+}
+
+.product-img-ct .img-content span {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 0;
+    top: 0;
+    background: rgba(200, 255, 200, .2);
+    display: none;
+    z-index: 3;
+    cursor: pointer;
+}
+
+.product-img-ct .bigArea {
+    position: absolute;
+    left: 480px;
+    top: 40px;
+    width: 300px;
+    height: 280px;
+    background: rgba(200, 200, 255, .9);
+    border: 1px solid #ddd;
+    overflow: hidden;
+    display: none;
+    z-index: 99;
+}
+
+.product-img-ct .bigArea img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 800px;
+    height: 800px;
+    display: none;
+}
+
+.product-img-ct .bigArea li.hover img {
+    display: block;
+}
+
+.main-top .collection-share {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+
+.main-top .collection-share>li {
+    margin: 0 20px;
+}
+
+.main-top .collection-share>li:nth-child(1) {
+    padding-left: 15px;
+    color: #9f6a45;
+    background: url(../images/love-it.jpg) no-repeat left center;
+    cursor: pointer;
+}
+
+.main-top .collection-share>li:nth-child(1):hover {
+    opacity: .7;
+}
+
+.main-top .collection-share>li:nth-child(2) {
+    display: flex;
+    align-items: center;
+}
+
+.main-top .collection-share li>a {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    background: url('../images/jiathis_ico.png') no-repeat;
+}
+
+.main-top .collection-share li a.kj {
+    background-position: 0 -64px;
+}
+
+.main-top .collection-share li a.wb {
+    background-position: 0 -96px;
+}
+
+.main-top .collection-share li a.tx {
+    background-position: 0 -144px;
+}
+
+.main-top .collection-share li a.rr {
+    background-position: 0 -160px;
+}
+
+.main-top .collection-share li>.gd {
+    padding-left: 20px;
+    background: url('../images/jiathis_ico.png') no-repeat 0 -1199px;
+}
+
+
+.main-top .collection-share li a:hover {
+    opacity: .7;
+}
+
+.main-top .collection-share li span.gd {
+    cursor: pointer;
+}
+
+.main-top .collection-share .gd {
+    position: relative;
+    cursor: pointer;
+}
+
+.main-top .collection-share .gd:hover .hide-share-box {
+    display: block;
+}
+
+.collection-share .gd .hide-share-box {
+    display: none;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 120px;
+    background: #fff;
+    border : 1px solid #ddd;
+    box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, .08);
+}
+
+.collection-share .gd .hide-share-box .share-top {
+    padding: 8px 0 8px 5px;
+    font-size: 16px;
+    font-weight: bold;
+    background: #eee;
+    border-bottom: 1px solid #ddd;
+}
+
+.collection-share .gd .hide-share-box .share-middle {
+    margin-left: 5px;
+    padding: 8px 0;
+    line-height: 1.4em;
+}
+
+.collection-share .gd .share-middle li {
+    margin: 10px 0;
+    padding-left:20px;
+    background: url('../images/jiathis_ico.png') no-repeat;
+    cursor: pointer;
+}
+
+.collection-share .gd .share-middle li.fx {
+    background-position: 0px -1857px;
+}
+
+.collection-share .gd .share-middle li.kj {
+    background-position: 0px -64px;
+}
+
+.collection-share .gd .share-middle li.wb {
+    background-position: 0px -96px;
+}
+
+.collection-share .gd .share-middle li.sc {
+    background-position: 0px -64px;
+}
+
+.collection-share .gd .share-middle li.rr {
+    background-position: 0px -160px;
+}
+
+.collection-share .gd .share-middle li.tx {
+    background-position: 0px -144px;
+}
+
+.collection-share .gd .share-middle li.xc {
+    background-position: 0px -64px;
+}
+
+.collection-share .gd .share-middle li.gd {
+    background-position: 0px -1200px;
+}
+
+.collection-share .gd .share-middle li:hover {
+    text-decoration: underline;
+    color: #9f6a45;
+}
+
+.collection-share .gd .share-down {
+    position: relative;
+    padding: 5px 5px 5px 0;
+    text-align: right;
+    background: #eee;
+    border-top: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.collection-share .gd .share-down>span {
+    position: absolute;
+    top: 6px;
+    left: 44px;
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: url('../images/jiathis_ico.png') no-repeat 0 -1200px;
+    cursor: pointer;
+}
+
+.collection-share .gd .share-down:hover {
+    color: #9f6a45;
+    text-decoration: underline;
+}
+
+    /*主体　产品 图*/
+    /*主体　产品 信息*/
+.product-info {
+    position: relative;
+}
+
+.product-info .info-title>h3{
+    font-weight: normal;
+    font-size: 16px;
+    color: #333;
+}
+
+.product-info .info-title>p:nth-last-child(2){
+    font-size: 20px;
+    color: red;
+}
+
+.product-info .info-title>p:nth-last-child(1){
+    font-size: 12px;
+    color: #333;
+}
+
+.product-info .info-title>p:nth-last-child(1)>span{
+    margin-right: 50px;
+}
+
+.product-info .info-select {
+    margin-top: 8px;
+    padding: 20px 10px;
+    background: #fef3f1;
+    color: #666;
+    font-size: 14px;
+}
+
+.product-info .info-select p {
+    display: flex;
+    align-items: center; 
+    margin: 8px 0;
+}
+
+.product-info .info-select .cz>i {
+    display: block;
+    padding: 3px;
+    margin: 0 5px;
+    border: 1px solid #666;
+    background: #fff;
+    font-size: 12px;
+    color: #333;
+    cursor: pointer;
+}
+
+.product-info .info-select .cz>i.hover {
+    border: 2px solid #feabab;
+    background: #fff url('../images/br_right.png') no-repeat right bottom;
+}
+
+.product-info .info-select .sc>select {
+    margin-left: 5px;
+}
+
+.product-info .info-select .kz>input {
+    padding: 5px;
+    margin: 0 5px;
+    border: 1px solid #333;
+    color: #666;
+}
+
+.product-info .info-select .kz>i {
+    padding: 4px;
+    margin: 0 5px;
+    border: 1px solid #333;
+    background: #fff;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.product-info .info-select .kz [type="button"]{
+    background: #eee;
+    cursor: pointer;
+}
+
+.product-info .info-select .preview {
+    position: absolute;
+    left: -136px;
+    top: 295px;
+    background: url(../images/kzyl.jpg) no-repeat;
+    width: 96px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    font-family: "微软雅黑";
+    display: none;
+}
+
+.product-info .info-color {
+    margin-top: 10px;
+}
+
+.product-info .info-color>p {
+    font-size: 12px;
+    color: #666;
+}
+
+.product-info .info-color>ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.product-info .info-color>ul>li {
+    width: 80px;
+    margin: 5px;
+    padding: 3px;
+    text-align: center;
+    border: 1px solid #666;
+    font-size: 14px;
+    cursor: pointer;
+    color: #666;
+}
+
+.product-info .info-color>ul>li.hover {
+    border: 2px solid #feabab;
+    background: #fff url('../images/br_right.png') no-repeat right bottom;
+}
+
+.product-info .info-color>p:nth-last-child(1) {
+    margin-left: 5px;
+}
+
+.product-info .add-shop-cart-btn>ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.product-info .add-shop-cart-btn>ul>li {
+    margin-right: 5px;
+    padding: 8px 0;
+    width: 120px;
+    text-align: center;
+    background: #d6b870;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    opacity: 1;
+}
+
+.product-info .add-shop-cart-btn>ul>li:hover {
+    opacity: .7;
+}
+
+.product-info .add-shop-cart-btn>ul>li:nth-last-child(1) {
+    border: 1px solid #d6b870;
+    background: #fff;
+    color: #d6b870;
+}
+
+.product-info .add-shop-cart-btn>p>a{
+    margin-top: 5px;
+    color: #9f6a45;
+    font-size: 14px;
+}
+
+.product-info .add-shop-cart-btn>p>a:hover {
+    text-decoration: underline;
+}
+    /*主体　产品 信息*/
+
+/*主体　第一部分 */
+
+/*主题第二部分  */
+
+
+.main-middle {
+    margin-top: 30px;
+}
+    /*tab 切换  */
+.main-middle>.tab {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 50px;
+}
+
+.main-middle>.tab li {
+    margin-right: 5px;
+    padding: 5px 30px;
+    background: #fff;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-bottom: none;
+    font-size: 14px;
+    color: #666;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.main-middle>.tab li.active {
+    border: 1px solid #d6b870; 
+    border-bottom: 1px solid #fff;
+}
+
+     /*tab 切换  */
+    /*文本内容　参数  */
+.main-middle-content {
+    border-top: 1px solid #d6b870;
+    background: #fff;
+    padding: 0 30px;
+}
+
+.main-middle-content>li {
+    display: none;
+}
+
+.main-middle-content li.hover {
+    display: block;
+}
+
+.details_page .text-parameter {
+    margin: 20px 0;
+    background: #fef3f1;
+}
+
+.details_page .text-parameter>ul {
+    padding: 0 50px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.details_page .text-parameter>ul>li {
+    padding: 10px 0;
+    margin-right: 80px;
+    font-size: 14px;
+    color: #999;
+}
+
+.details_page .text-parameter>ul>li>span {
+    color: #333;
+}
+
+.details_page .text-parameter>ul>li:nth-child(1) {
+    font-weight: bold;
+    color: #000;
+}
+    /*文本内容　参数  */
+
+     /*文本内容　图片  */
+.details_page .img-content a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.details_page .img-content img {
+    width: 100%;
+}
+      /*文本内容　图片  */
+/*主题第二部分  */
+
+/*主体第三部分  */
+.main-down {
+    margin-top: 30px;
+}
+
+.main-down .contact {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+    background: #fff;
+}
+
+.main-down .contact>li {
+    padding: 10px 0;
+    width: 320px;
+    text-align: center;
+}
+
+.main-down .contact>li:nth-child(2) {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+
+.main-down .contact>li:nth-child(1)>p {
+    font-size: 14px;
+    color: #333;
+}
+
+.main-down .contact>li:nth-child(2) .pho-icons,
+.main-down .contact>li:nth-child(3) .pho-icons {
+    margin: 0 auto;
+    width: 50px;
+    height: 50px;
+    background: url(../images/phone.png) no-repeat;
+}
+
+.main-down .contact>li:nth-child(2)>h3 {
+    font-size: 24px;
+    color: #333;
+}
+
+.main-down .contact>li:nth-child(2)>p {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.8em;
+}
+
+.main-down .contact>li:nth-child(2) a {
+    color: #9f6a45;
+    cursor: pointer;
+}
+
+.main-down .contact>li:nth-child(2) a:hover {
+    text-decoration: underline;
+}
+
+.main-down .contact>li:nth-child(3) .pho-icons {
+    background-position: -50px 0px;
+}
+
+.main-down .contact>li:nth-child(3)>h3 {
+    font-size: 22px;
+    font-weight: normal;
+}
+
+.main-down .contact>li:nth-child(3)>select {
+    display: block;
+    margin: 3px auto;
+    padding: 3px;
+    width: 240px;
+    cursor: pointer;
+}
+
+.main-down .contact>li:nth-child(3)>input {
+    padding: 3px;
+    margin: 3px 0;
+}
+
+.main-down .contact>li:nth-child(3)>input:nth-last-child(3) {
+    width: 80px;
+}
+
+.main-down .contact>li:nth-child(3)>input:nth-last-child(1) {
+    display: block;
+    margin: 10px auto;
+    padding: 8px 20px;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    background: #d6b870;
+    cursor: pointer;
+}
+
+.main-down .contact>li:nth-child(3)>input:nth-last-child(1):hover {
+    opacity: .7;
+}
+
+.main-down .annal {
+    position: relative;
+    margin-top: 30px;
+    padding: 30px;
+    background: #fff;
+}
+
+.main-down .annal>h3 {
+    padding: 10px 0;
+    font-size: 14px;
+    font-weight: normal;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+}
+
+.main-down .annal .annal-ct {
+    position: relative;
+    overflow: hidden;
+    height: 180px;
+}
+
+.main-down .annal-content {
+    
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.main-down .annal-content li {
+    margin: 0 10px;
+    padding: 10px;
+    width: 200px;
+}
+
+.main-down .annal-content img {
+    width: 120px;
+}
+
+.main-down .annal-btns {
+    position: absolute;
+    bottom: 50%;
+    margin-bottom: -70px;
+    height: 100px;
+    width: 940px;
+    
+    
+}
+
+.main-down .annal .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    padding: 10px 5px;
+    font-size: 40px;
+    color: #999;
+    cursor: pointer;
+}
+
+.main-down .annal .arrow:hover {
+    background: #ddd;
+    color: #fff;
+    border-radius: 3px;
+}
+
+.main-down .annal .up {
+    left: -25px;
+}
+
+.main-down .annal .down {
+    right: -25px;
+}
+
+
+/*主体第三部分  *／

@@ -1,0 +1,503 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+a {
+    text-decoration: none;
+    color: inherit; 
+}
+
+/*头部*/
+.header-layout {
+    max-width: 1000px;
+    margin: 30px auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-info {
+    min-width: 550px;
+    font-size: 13px;
+}
+
+.header-info .info-text{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 45px;
+}
+
+.header-info .info-text li {
+    position: relative;
+}
+
+.header-info .info-text .logIn:hover a{
+    color:#e0bba9;
+}
+
+.header-info .info-text .addDr {
+    background-color: #e0bba9;
+}
+
+.header-info .info-text .addDr:hover {
+    background-color: #c67c59;
+    opacity: .8;
+}
+
+.info-text li .numberIcon {
+    display: inline-block;
+    width: 15px;
+    height: 18px;
+    margin-right: 3px;
+    background: url(../images/telleft.png) no-repeat;
+    vertical-align: middle;
+}
+
+.info-text li a .downloadApp {
+    position: absolute;
+    left: -50px;
+    top: 20px;
+    display: none;
+    width: 180px;
+    padding: 20px 0;
+    font-size: 16px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .08);
+    z-index: 99;
+}
+
+.info-text li:hover a .downloadApp {
+    display: block;
+}
+
+.info-text li a .downloadApp p {
+    margin-top: 8px;
+}
+
+.info-text li .drApp {
+    display: inline-block;
+    width: 15px;
+    height: 18px;
+    background: url(../images/mobile.png) no-repeat;
+    vertical-align: middle;
+}
+
+.info-text li .arrowDown {
+    display: inline-block;
+    width: 15px;
+    height: 6px;
+    margin-left: 3px;
+    background: url(../images/bottom.png) no-repeat;
+    vertical-align: middle;
+}
+
+.info-text li .alterLanguage { 
+    display: none;
+    position: absolute;
+    top: 18px;
+    left: 0;
+    padding: 4px 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .2);
+}
+
+.info-text li:hover .alterLanguage {
+    display: block;
+}
+
+.info-text li:hover .alterLanguage a:hover {
+    text-decoration: underline;
+    opacity: .8;
+}
+
+.info-text li .city {
+    display: none;
+    position: absolute;
+    top: 18px;
+    right: 0;
+    padding: 10px;
+    width: 280px;
+    background-color: #fff;
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .08);
+    z-index: 99; 
+}
+
+.info-text li .city li {
+    float: left;
+    margin-right: 31.9px;
+}
+
+.info-text li .city li:nth-child(5){
+    margin-right: 0;
+}
+
+.info-text li .city li:hover a{
+    color: #e0bba9;
+}
+
+.info-text li:hover ul.city {
+    display: block;
+}
+
+.info-text .cityBox:hover>a {
+    background-color: #fff;
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .08);
+}
+
+.search-box .search-img{
+    text-align: right;
+    margin: 8px 0;
+    padding-right: 44px;
+}
+
+.search-box .search-content {
+    position: relative;
+    vertical-align: middle;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.search-content select {
+    border: none;
+    margin-right: 20px;
+    font-size: 14px;
+    outline: none;
+    cursor: pointer;
+}
+
+.search-content [type="text"] {
+    width: 200px;
+    margin-right: 20px;
+    outline: none;
+}
+
+.search-content [type="button"] {
+    border: none;
+    padding: 0 6px;
+    cursor: pointer;
+}
+
+.search-content .point {
+    position: absolute;
+    top: -70px;
+    width: 400px;
+    padding: 10px;
+    background-color: #fff;
+    display: none;
+    border: 1px solid #333;
+    border-radius: 3px;
+}
+
+.search-content .point::before {
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    width: 0px;
+    height: 0px;
+    border: 8px solid transparent;
+    border-top: 8px solid #fff; 
+    content: '';
+    display: block;
+    z-index: 99;
+}
+
+.search-content .error-hover {
+    top: -50px;
+}
+
+.search-content .point::after {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 0px;
+    height: 0px;
+    border: 8px solid transparent;
+    border-top: 8px solid #333; 
+    content: '';
+    display: block;
+}
+
+.search-box .search-content:hover .point-hover{
+    display: block;
+}
+
+/*导航  */
+
+#nav {
+    background: #666;
+    margin-top: 20px;
+}
+
+#nav .nav-layout {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.nav-text {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+
+.nav-text li a{
+    display: block;
+    padding: 8px 20px;
+}
+
+/*尾部*/
+
+#footer {
+    padding-top: 30px;
+}
+
+#footer .footer-line {
+    border-top: 6px solid #333;
+    height: 12px;
+    border-bottom: 2px solid #333;
+    margin-bottom: 20px;
+}
+
+#footer .footer-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-icons li a{
+    display: block;
+    margin: 8px 30px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.footer-icons li a span {
+    display: block;
+    width: 60px;
+    height: 60px;
+    background: url(../images/icon_footer.png) no-repeat;
+    margin-bottom: 10px;
+}
+
+.footer-icons .icons1 {
+    background-position: 0 0;
+}
+
+.footer-icons .icons2 {
+    background-position: -60px 0;
+}
+
+.footer-icons .icons3 {
+    background-position: -120px 0;
+}
+
+.footer-icons .icons4 {
+    background-position: -180px 0;
+}
+
+.footer-icons .icons5 {
+    background-position: -240px 0;
+}
+
+.footer-icons .icons6 {
+    background-position: -300px 0;
+}
+
+.footer-icons .icons7 {
+    background-position: -360px 0;
+}
+
+.footer-icons .icons1:hover {
+    background-position: 0 -60px;
+}
+
+.footer-icons .icons2:hover {
+    background-position: -60px -60px;
+}
+
+.footer-icons .icons3:hover {
+    background-position: -120px -60px;
+}
+
+.footer-icons .icons4:hover {
+    background-position: -180px -60px;
+}
+
+.footer-icons .icons5:hover {
+    background-position: -240px -60px;
+}
+
+.footer-icons .icons6:hover {
+    background-position: -300px -60px;
+}
+
+.footer-icons .icons7:hover {
+    background-position: -360px -60px;
+}
+
+
+
+.service {
+    background-color: #eee;
+    font-size: 20px;
+    padding: 16px 0;
+}
+
+.service .service-layout {
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.service-text {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.service-text>li {
+    padding: 20px 0;
+    margin-right: 60px;
+} 
+
+.service-text .arrow-icons {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: url(../images/coin_left.png) no-repeat;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.service-number p{
+   font-size: 14px;
+}
+
+.service-number span {
+    font-family: "microsoft yahei",arial;
+    color: #c67c59;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.service-text .footer-app {
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    padding: 10px;
+    background-color: #eee;
+    text-align: center;
+}
+
+.footer-app .outerlink {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.footer-app .outerlink li>a{
+    background: url(../images/ico-shares.png) no-repeat;
+    display: block;
+    width: 27px;
+    height: 27px;
+    margin: 2px;
+}
+
+.footer-app .outerlink .wb> a {
+    background-position: 0 0;
+}
+
+.footer-app .outerlink .kj> a {
+    background-position: -31px 0;
+}
+
+.footer-app .outerlink .rr> a {
+    background-position: -62px 0;
+}
+
+.footer-app .outerlink .db> a {
+    background-position: -93px 0;
+}
+
+.footer-app .outerlink .fb> a {
+    background-position: -31px -34px;
+}
+
+.footer-app .outerlink .wb>a:hover {
+     background-position: 0 -68px;
+}
+
+.footer-app .outerlink .kj>a:hover {
+     background-position: -31px -68px;
+}
+
+.footer-app .outerlink .rr>a:hover {
+    background-position: -62px -68px;
+}
+
+.footer-app .outerlink .db>a:hover {
+    background-position: -93px -68px;
+}
+
+.footer-app .outerlink .fb>a:hover {
+    background-position: -31px -102px
+}
+
+.service-text .hover:hover .footer-app {
+    display: block;
+}
+
+/*底部信息 footer-info  */
+
+.footer-info {
+    padding: 60px 0;
+    background: #797979;
+}
+
+.footer-info .info-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.footer-info .info-list li {
+    padding: 0 50px;
+    border-right: 2px solid #ccc;
+    color: #ccc;
+    font-size: 14px;
+}
+
+.footer-info .info-list li:last-child {
+    border-right: none;
+}
+
+.footer-info .info-list li h4 {
+    color: #eee;
+}
+
+.footer-info .address {
+    text-align: center;
+    font-size: 12px;
+    color: #ccc;
+    margin-bottom: 30px;
+}
+
+.footer-info .info-language {
+    text-align: center;
+    font-size: 12px;
+    color: #ccc;
+}

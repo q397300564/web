@@ -1,0 +1,314 @@
+
+/*内容 头部  */
+/*左  */
+.ct-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.ct-title .wrap-left,
+.ct-title .wrap-right {
+    font-size: 12px; 
+    color: #333;
+}
+
+.ct-title .wrap-left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: conter;
+}
+
+.ct-title .wrap-left .add-select {
+    position: relative;
+    margin: 15px;
+    padding: 0 2px;
+    border: 1px solid #eee;
+    border-right: none;
+    cursor: pointer;
+}
+
+.ct-title .wrap-left .add-select i {
+    position: absolute;
+    top: -1px;
+    right: -20px;
+    width: 20px;
+    height: 20px;
+    background: url(../images/close.jpg) no-repeat;
+    background-size: 20px;
+    opacity: .5;
+}
+
+.ct-title .wrap-left .add-select:hover{
+    border-color:  #f6efef;
+}
+
+.ct-title .wrap-left .add-select:hover i {
+    background: url(../images/close_hover.jpg) no-repeat;
+}
+
+/*  右*/
+.ct-title .wrap-right{
+    display: flex;
+    align-items: center; 
+}
+
+.ct-title input{
+    outline: none;
+}
+
+.ct-title .search-keywords {
+    margin-right: 5px;
+    padding: 3px 0 3px 24px;
+    width: 240px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    background: url(../images/search-icon.png) no-repeat;
+    background-size: 20px;
+}
+
+.ct-search-btns {
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+/*内容 头部  */
+
+/*内容 筛选部分  */
+#ct {
+    padding: 30px 0;
+
+    background-color: #f6efef;
+}
+
+#ct .ct-select {
+    padding-left: 10px;
+    background: #fff;
+}
+
+#ct .ct-select .wrap-select {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+#ct .ct-select .wrap-select:nth-last-child(1) {
+    border-bottom: none;
+}
+
+.ct-select .wrap-select .head {
+    width: 100px;
+    border-right: 1px solid #ddd;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+.ct-select .wrap-select .body,
+.ct-select .wrap-select .price-btns {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: #333;
+}
+
+.ct-select .wrap-select .body li{
+    display: flex;
+    margin-left: 20px;
+}
+
+.ct-select .wrap-select .body a:hover {
+    color: #d9b39b;
+}
+
+.ct-select .wrap-select .body li.active a {
+    color: #d9b39b;
+}
+
+.ct-select .wrap-select .price-btns {
+    margin-left: 20px;
+}
+
+.ct-select .wrap-select .price-btns input{
+    width: 50px;
+}
+
+.ct-select .wrap-select:last-child .price-btns input[type="button"] {
+    margin-left: 6px;
+    font-size: 12px;
+}
+
+/*内容 筛选部分  */
+
+/* bread  面包屑 */
+
+.ct-breadcrumbs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+    color: #333;
+}
+
+.ct-breadcrumbs .left {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.ct-breadcrumbs .left li:first-child {
+    width: 100px;
+    border-right: 1px solid #ddd;
+    font-weight: bold;
+}
+
+.ct-breadcrumbs .left li.links {
+    padding: 3px 20px;
+    margin: 0 5px;
+    background: #fff;
+    cursor: pointer;
+}
+
+.ct-breadcrumbs .left li.links:hover {
+    background: #d9b39b;
+    color: #fff;
+}
+
+.ct-breadcrumbs .left li.links.active {
+    background: #d9b39b;
+    color: #fff;
+}
+
+.ct-breadcrumbs .right {
+    display: flex;
+    align-content: center;
+}
+
+.ct-breadcrumbs .right span {
+    margin-right: 10px;
+}
+
+.ct-breadcrumbs .right .pageCount {
+    margin-left: 10px;
+}
+
+.ct-breadcrunmbs .right .pageNum {
+    margin: 0 5px;
+}
+
+.ct-breadcrumbs .right button {
+    margin: 0 3px;
+    padding: 0 15px;
+    color: #fff;
+    border: none;
+    background: #d9b39b;
+    opacity: .8;
+    cursor: pointer;
+}
+
+.ct-breadcrumbs .right button:hover {
+    opacity: 1;
+}
+
+
+/* product list 产品列表  */
+.ct-listWrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.ct-listWrap .goods-list {
+    max-width: 320px;
+    margin-top: 30px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.ct-listWrap .goods-list img {
+    width: 100%;
+}
+
+.ct-listWrap .goods-list-info {
+    margin-bottom: 30px;
+}
+    
+
+.ct-listWrap .goods-list-info .head {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #666;
+}
+
+.ct-listWrap .goods-list-info .body p {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+.ct-listWrap .goods-list-info .body span {
+    padding: 1px 40px;
+    font-size: 12px;
+    border: 1px solid #d9b39b;
+}
+
+.ct-listWrap .goods-list-info .body span:hover {
+    opacity: .8;
+}
+
+.ct-listWrap .goods-list-info .body>span {
+    color: #d9b39b;
+    cursor: pointer;
+    
+}
+
+.ct-listWrap .goods-list-info .body a>span {
+    background-color: #d9b39b;
+    color: #fff;
+} 
+
+.ct-listWrap .goods-list-info .foot {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #666;
+}
+
+/* product list 产品列表  */
+
+/*翻页按钮  */
+.ct-paging {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.ct-paging li {
+    margin-bottom:  30px;
+
+}
+
+.ct-paging .indexPage {
+    margin: 0 5px;
+    padding: 0 16px;
+    border: 1px solid #ddd;
+    color: #666;
+    cursor: pointer;
+}
+
+.ct-paging .indexPage.hover {
+    border: 1px solid #d9b39b;
+    color: #d9b39b;
+}  
+
+.ct-paging .indexPage:hover {
+    opacity: .6;
+}
+
+/*翻页按钮  */
